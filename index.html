@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AIMA Young Leaders Council</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css" />
+  <!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-poppins bg-white ">
+
+<!-- ================= NAVBAR ================= -->
+<!-- ================= TOP BAR ================= -->
+<div class="bg-gradient-to-r from-[#0E3C9D] to-[#2E48C3] text-white px-5 py-2">
+  <div class="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <!-- <div class="w-10 h-10 bg-white rounded"></div> -->
+      <span class="font-semibold text-lg">
+        <img src="assets/AIMA_logo.svg" alt="">
+</span>
+    </div>
+
+    <!-- Buttons -->
+   <div class="flex items-start gap-4 md:gap-8 lg:gap-[30px] px-3">
+<button class="group bg-white text-[#133EA3] font-bold
+               h-[53px] w-[160px]
+               flex items-center justify-center
+               rounded-tr-[25px] rounded-bl-[25px]
+               text-sm
+               shadow-[10px_10px_4px_rgba(0,0,0,0.25)]
+               relative
+               overflow-hidden
+               ">
+  myYLC
+  <span class="absolute bottom-2 left-1/2 -translate-x-1/2 h-[2px] w-0 bg-[#133EA3] 
+               transition-all duration-300 ease-in-out
+               group-hover:w-3/4"></span>
+</button>
+
+
+
+
+<button class="group bg-white text-[#133EA3] font-bold
+               h-[53px] w-[165px]
+               flex items-center justify-center
+               rounded-tr-[25px] rounded-bl-[25px]
+               text-sm
+               shadow-[10px_10px_4px_rgba(0,0,0,0.25)]
+               relative
+               overflow-hidden
+               ">
+  ENQUERE NOW
+  <span class="absolute bottom-2 left-1/2 -translate-x-1/2 h-[2px] w-0 bg-[#133EA3] 
+               transition-all duration-300 ease-in-out
+               group-hover:w-3/4"></span>
+</button>
+
+
+
+</div>
+
+  </div>
+</div>
+
+<!-- ================= SECOND NAVBAR ================= -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-16 py-4 flex items-center justify-between ">
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center gap-8 font-medium text-gray-800">
+  <a href="#" class="hover:text-[#103DA0] dropdown-link">Home</a>
+
+ <!-- About with Dropdown -->
+<div class="relative group">
+  <button class="flex items-center gap-1 hover:text-[#103DA0] dropdown-link">
+    About
+    <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute top-full left-0 mt-3 w-48 bg-white rounded-md shadow-lg
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-300 z-20
+           px-2 py-2 space-y-2 text-[12px]">
+
+    <a href="#" class="dropdown-link">ABOUT AIMA</a> <br>
+    <a href="#" class="dropdown-link">ABOUT YLC</a> <br>
+    <a href="#" class="dropdown-link">YLC CHARTER</a> <br>
+    <a href="#" class="dropdown-link">VISION</a> <br>
+    <a href="#" class="dropdown-link">MISSION</a> <br>
+    <a href="#" class="dropdown-link">EXECUTIVE BOARD</a> <br>
+    <a href="#" class="dropdown-link">MENTORS</a>
+
+  </div>
+</div>
+
+<!--MEMBERSHIP WITH DROPDOWN-->
+ <div class="relative group">
+  <button class="flex items-center gap-1 hover:text-[#103DA0] dropdown-link">
+    MEMBERSHIP
+    <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute top-full left-0 mt-3 w-[210px] bg-white rounded-md shadow-lg
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-300 z-20
+           px-2 py-2 space-y-2 text-[12px]">
+
+    <a href="#" class="dropdown-link">HOW TO BECOME A MEMBER?</a> <br>
+    <a href="#" class="dropdown-link">YLC CHAPTERS</a> <br>
+    <a href="#" class="dropdown-link">CURRENT MEMBERS/ MENTORS</a> <br>
+
+
+  </div>
+</div>
+ <a href="#" class="hover:text-[#103DA0] dropdown-link">Testimonials</a>
+<!--INITIATIVES AND EVENTS WITH DROPDOWN-->
+
+ <div class="relative group">
+  <button class="flex items-center gap-1 hover:text-[#103DA0] dropdown-link">
+    INITIATIVES & EVENTS
+    <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute top-full left-0 mt-3 w-[210px] bg-white rounded-md shadow-lg
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-300 z-20
+           px-2 py-2 space-y-2 text-[12px]">
+
+    <a href="#" class="dropdown-link">YLC MENTORSHIP PROGRAM</a> <br>
+    <a href="#" class="dropdown-link">YLC GLOBAL COLLABORATION</a> <br>
+    <a href="#" class="dropdown-link">UPCOMING EVENTS</a> <br>
+    <a href="#" class="dropdown-link">PAST EVENTS</a> <br>
+    <a href="#" class="dropdown-link">YLC SIG</a> <br>
+    <a href="#" class="dropdown-link">PODCAST </a> <br>
+    <a href="#" class="dropdown-link">YLC STARTUP AWARDS</a>
+
+  </div>
+</div>
+  <a href="#" class="hover:text-[#103DA0] dropdown-link">MEMBERSHIP BENEFITS</a>
+</nav>
+
+
+    <!-- Search -->
+   <div class="hidden sm:block">
+  <input
+    type="text"
+    placeholder="Search"
+    class="border-2 border-[#103DA0] rounded px-3 py-2 text-sm 
+           w-36 md:w-48 focus:outline-none"
+  />
+</div>
+
+
+    <!-- Mobile Menu Button -->
+    <button onclick="toggleMenu()" class="lg:hidden text-2xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden lg:hidden px-6 py-4 border-t space-y-3 ml-11">
+    <a href="#" class="block">Home</a>
+    <a href="#" class="block">About</a>
+    <a href="#" class="block">Membership</a>
+    <a href="#" class="block">Initiatives & Events</a>
+    <a href="#" class="block">Testimonials</a>
+
+   
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+<!-- HERO CAROUSEL -->
+<!-- HERO SLIDER -->
+<section class="relative w-full overflow-hidden">
+
+  <div class="swiper heroSwiper h-[90vh] min-h-[600px]">
+
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+               class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div class="relative z-10 h-full flex items-center">
+          <div class="max-w-7xl mx-auto px-6 text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Young Leaders Collective
+            </h1>
+            <p class="mt-4 max-w-2xl text-lg md:text-xl text-white/90">
+              An initiative of AIMA to empower young professionals by
+              nurturing leadership, collaboration, and innovation.
+            </p>
+
+            <div class="mt-8 flex gap-4">
+              <button class="bg-white text-[#103DA0] px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">
+                Know More
+              </button>
+              <button class="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-[#103DA0] transition">
+                Join YLC
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+               class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div class="relative z-10 h-full flex items-center">
+          <div class="max-w-7xl mx-auto px-6 text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Learn. Network. Lead.
+            </h1>
+            <p class="mt-4 max-w-2xl text-lg md:text-xl text-white/90">
+              Engage with industry leaders, participate in impactful
+              initiatives, and build meaningful professional networks.
+            </p>
+
+            <div class="mt-8">
+              <button class="bg-white text-[#103DA0] px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">
+                Explore Programs
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4"
+               class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div class="relative z-10 h-full flex items-center">
+          <div class="max-w-7xl mx-auto px-6 text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Building Future Leaders
+            </h1>
+            <p class="mt-4 max-w-2xl text-lg md:text-xl text-white/90">
+              A vibrant community shaping ideas, driving change,
+              and creating impact across industries.
+            </p>
+
+            <div class="mt-8">
+              <button class="bg-white text-[#103DA0] px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">
+                Become a Member
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+</section>
+<!-- End Hero Section-->
+<!-- ================= ABOUT AIMA YLC ================= -->
+<section class="w-full bg-white py-16 font-[Poppins]">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
+      About AIMA YLC
+<div class="flex items-center justify-center gap-3 mt-3">
+  <!-- Dots -->
+  <div class="flex gap-2">
+    <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
+    <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
+    <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
+  </div>
+
+  <!-- Line -->
+  <span class="h-[4px] w-40 md:w-32 bg-orange-500 rounded-full"></span>
+</div>
+
+      
+    </h2>
+
+    <!-- Description -->
+    <p class="mt-8 max-w-4xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
+      In its endeavour to provide a platform to young leaders to shape the
+      management destiny of the country, All India Management Association
+      has constituted Young Leaders Council (YLC).
+    </p>
+
+    <p class="mt-4 max-w-4xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
+      The objective of the Council is to create a non-lobbying platform for
+      young leaders who are ushering in the new era of change and building
+      the new age India to engage with each other on a regular basis.
+    </p>
+
+   <!-- Vision / Mission Wrapper -->
+<div class="flex justify-center mt-12">
+
+  <div
+    class="bg-[#E6E6E6]
+           rounded-xl
+           px-10 py-5
+           w-full max-w-4xl
+           flex flex-col md:flex-row
+           items-center justify-between gap-12
+
+           shadow-[0px_4px_14.1px_9px_rgba(15,60,159,0.21)]">
+
+    <!-- Vision -->
+    <div class="flex flex-col items-center text-center w-full md:w-1/2 ">
+      <img src="assets/vision_icon.svg"
+           class="w-32 h-32 mb-4 cursor-pointer"
+           alt="Vision">
+      <h3 class="text-3xl font-bold text-black cursor-pointer">Vision</h3>
+    </div>
+
+    <!-- Divider Image -->
+    <div class="hidden md:flex items-center">
+      <img src="assets/Zig_Zag_Line.svg"
+           class=" object-contain"
+           alt="Divider">
+    </div>
+
+    <!-- Mission -->
+    <div class="flex flex-col items-center text-center w-full md:w-1/2">
+      <img src="assets/mission_icon.svg"
+           class="w-32 h-32 mb-4 cursor-pointer"
+           alt="Mission">
+      <h3 class="text-3xl font-bold text-black cursor-pointer">Mission</h3>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+</section>
+
+
+
+<!-- ================= TESTIMONIALS SLIDER ================= -->
+
+
+<!-- FULL WIDTH BACKGROUND -->
+ <!-- Heading (same as before) -->
+  <div class="text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
+    Testimonials
+    <div class="flex items-center justify-center gap-3 mt-3">
+      <div class="flex gap-2">
+        <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
+      </div>
+      <span class="h-[4px] w-40 md:w-32 bg-orange-500 rounded-full"></span>
+    </div>
+  </h2>
+  </div>
+<div
+  class=" w-full bg-cover bg-center py-11"
+  style="background-image: url('ffbg.svg');"
+>
+
+  <!-- CENTER CONTENT -->
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- SWIPER -->
+    <div class="swiper testimonialSwiper relative overflow-hidden w-full mt-8">
+
+      <div class="swiper-wrapper">
+
+        <!-- CARD 1 -->
+        <div class="swiper-slide flex justify-center px-2">
+          <div class="bg-white shadow-lg px-6 py-5 w-full md:w-[350px] text-center relative">
+            <div class="relative w-[155px] h-[155px] mx-auto">
+              <div class="absolute inset-1 rounded-full border-2 border-blue-800"></div>
+              <div class="absolute inset-1 rounded-full border-4 border-blue-800 mt-3 ml-[6px] w-[135px] h-[135px]">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/194/194935.png"
+                  alt="Mr. Darshan Rathod"
+                  class="relative w-[127px] h-[127px] object-cover rounded-full"
+                >
+              </div>
+            </div>
+
+            <h3 class="mt-4 text-xl font-bold text-blue-800">Mr. Darshan Rathod</h3>
+            <p class="text-sm font-medium mb-4">Co-founder, Acumen M&A Advisors</p>
+            <p class="text-gray-600 text-sm mb-4 text-start">
+              I joined AIMA–YLC during the COVID-19 lockdown and benefited from its impactful online webinars and global exposure, including an opportunity to speak at a Horasis Global event. I look forward to contributing further and engaging in future networking events
+              <a href="#" class="text-blue-800 font-semibold underline">read more……</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="swiper-slide flex justify-center px-2">
+          <div class="bg-white shadow-lg px-6 py-5 w-full md:w-[350px] text-center relative">
+            <div class="relative w-[155px] h-[155px] mx-auto">
+              <div class="absolute inset-1 rounded-full border-2 border-blue-800"></div>
+              <div class="absolute inset-1 rounded-full border-4 border-blue-800 mt-3 ml-[6px] w-[135px] h-[135px]">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/194/194935.png"
+                  alt="Mr. Kunal Mandal"
+                  class="relative w-[127px] h-[127px] object-cover rounded-full"
+                >
+              </div>
+            </div>
+
+            <h3 class="mt-4 text-xl font-bold text-blue-800">Mr. Kunal Mandal</h3>
+            <p class="text-sm font-medium mb-4">AIMA YLC Member and Co-Founder – Gyaanspace</p>
+            <p class="text-gray-600 text-sm mb-4 text-start">
+              "Being a member of AIMA YLC unlocks a world of opportunities for young leaders, empowering them with knowledge, networks, and the resources needed to excel in today's dynamic business environment."
+              <a href="#" class="text-blue-800 font-semibold underline">read more……</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="swiper-slide flex justify-center px-2">
+          <div class="bg-white shadow-lg px-6 py-5 w-full md:w-[350px] h-[430px] text-center relative">
+            <div class="relative w-[155px] h-[155px] mx-auto">
+              <div class="absolute inset-1 rounded-full border-2 border-blue-800"></div>
+              <div class="absolute inset-1 rounded-full border-4 border-blue-800 mt-3 ml-[6px] w-[135px] h-[135px]">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/194/194935.png"
+                  alt="Mr. Kartik Sharma"
+                  class="relative w-[127px] h-[127px] object-cover rounded-full"
+                >
+              </div>
+            </div>
+
+            <h3 class="mt-4 text-xl font-bold text-blue-800">Mr. Kartik Sharma</h3>
+            <p class="text-sm font-medium mb-4">Artificial Intelligence Thought Leader Past Chairman</p>
+            <p class="text-gray-600 text-sm mb-4 text-start">
+              As a first-generation startup entrepreneur, AIMA YLC has been a strong support system for me. The network, mentorship, and guidance from inspiring leaders have helped me grow both professionally and personally. I see YLC as a trusted extended family I can always rely on.
+              <a href="#" class="text-blue-800 font-semibold underline">read more……</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="w-full flex justify-center px-4 py-10">
+  <div
+    class="w-full max-w-6xl bg-white rounded-tr-[40px] rounded-bl-[40px] border-4 border-dashed border-blue-700 px-6 md:px-12 py-8 md:py-14 text-center"
+  >
+
+     <img src="assets/text.svg">  
+  </div>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<img src="assets/footer.svg" class="mt-5">
+<!-- ================= JS ================= -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  /* =========================
+     MOBILE MENU TOGGLE
+  ========================== */
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  }
+
+  /* =========================
+     HERO SECTION SWIPER
+  ========================== */
+  new Swiper(".heroSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 6500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".heroSwiper .swiper-pagination",
+      clickable: true,
+    },
+    speed: 1000,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  });
+
+  /* =========================
+     TESTIMONIALS SWIPER
+  ========================== */
+  new Swiper(".testimonialSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 1, // desktop pe bhi ek-ek slide
+      },
+    },
+
+    pagination: {
+      el: ".testimonialSwiper .swiper-pagination",
+      clickable: true,
+    },
+
+    speed: 800,
+  });
+</script>
+
+</body>
+</html>
